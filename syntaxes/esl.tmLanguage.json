@@ -1,0 +1,44 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "ECMA-SL",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#keywords" },
+    { "include": "#expressions" },
+    { "include": "#statements" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.block.esl",
+          "begin": "/\\*",
+          "end": "\\*/"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.esl",
+          "match": "\\b(import|function|if|else|while|repeat|until|return|match|with|typeof|throw|delete|l_len|l_nth|l_add|l_concat|t_len|t_nth|hd|tl|fst|snd|in_obj|in_list|true|false|null|default|int_to_float|float_to_string|obj_to_list|obj_fields)\\b"
+        }
+      ]
+    },
+    "expressions": {
+      "patterns": [{ "include": "#values" }]
+    },
+    "#statements": {
+      "patterns": []
+    },
+    "values": {
+      "patterns": [{ "include": "#strings" }]
+    },
+    "strings": {
+      "name": "string.quoted.double.esl",
+      "begin": "\"",
+      "end": "\""
+    }
+  },
+  "scopeName": "source.esl"
+}
