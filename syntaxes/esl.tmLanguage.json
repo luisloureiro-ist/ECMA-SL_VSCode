@@ -21,7 +21,7 @@
       "patterns": [
         {
           "name": "keyword.control.esl",
-          "match": "\\b(import|function|if|else|while|repeat|until|return|match|with|typeof|throw|delete|l_len|l_nth|l_add|l_concat|t_len|t_nth|hd|tl|fst|snd|in_obj|in_list|true|false|null|default|int_to_float|float_to_string|obj_to_list|obj_fields)\\b"
+          "match": "\\b(import|function|macro|if|else|elif|while|foreach|repeat|until|switch|return|match|with|typeof|throw|assert|delete|l_len|l_nth|l_add|l_prepend|l_concat|l_remove_last|l_sort|t_len|t_nth|hd|tl|fst|snd|in_obj|in_list|true|false|null|default|int_to_float|float_to_string|float_of_string|obj_to_list|obj_fields)\\b"
         }
       ]
     },
