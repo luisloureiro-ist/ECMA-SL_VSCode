@@ -62,7 +62,7 @@
     },
     "string-character-escape": {
       "name": "constant.character.escape.esl",
-      "match": "\\\\(x[0-9A-Fa-f]{2}|u[0-9A-Fa-f]{4,6}|.|$)"
+      "match": "\\\\(x[0-9A-Fa-f]{2}|u\\{[0-9A-Fa-f]{4,6}\\}|.|$)"
     }
   },
   "scopeName": "source.esl"
